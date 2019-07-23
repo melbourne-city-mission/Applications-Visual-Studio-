@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="RaisersEdge">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=192.168.0.21;Initial Catalog=RE7</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>ad29a45e-c489-44ef-883a-b1a708c0af2d</DataSourceID>
+</RptDataSource>

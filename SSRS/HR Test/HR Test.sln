@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "HR Test", "HR Test\HR Test.rptproj", "{E4B39A41-DE94-4CFB-A621-B577E5B85E71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4B39A41-DE94-4CFB-A621-B577E5B85E71}.Debug|Default.ActiveCfg = Debug
+		{E4B39A41-DE94-4CFB-A621-B577E5B85E71}.Debug|Default.Build.0 = Debug
+		{E4B39A41-DE94-4CFB-A621-B577E5B85E71}.Debug|Default.Deploy.0 = Debug
+		{E4B39A41-DE94-4CFB-A621-B577E5B85E71}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{E4B39A41-DE94-4CFB-A621-B577E5B85E71}.DebugLocal|Default.Build.0 = DebugLocal
+		{E4B39A41-DE94-4CFB-A621-B577E5B85E71}.Release|Default.ActiveCfg = Release
+		{E4B39A41-DE94-4CFB-A621-B577E5B85E71}.Release|Default.Build.0 = Release
+		{E4B39A41-DE94-4CFB-A621-B577E5B85E71}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F4E8AAC-7D63-44CA-9E8B-D16FFD3F7B13}
+	EndGlobalSection
+EndGlobal

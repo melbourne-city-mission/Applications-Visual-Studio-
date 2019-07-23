@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MCMDW">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=192.168.0.21;Initial Catalog=MCMDatawareHouse</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>088e6159-e065-4412-b4f9-377731d5f835</DataSourceID>
+</RptDataSource>

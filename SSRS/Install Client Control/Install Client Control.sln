@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Install Client Control", "Install Client Control\Install Client Control.rptproj", "{FBA34886-FD48-40DF-816B-E640069EF38E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBA34886-FD48-40DF-816B-E640069EF38E}.Debug|Default.ActiveCfg = Debug
+		{FBA34886-FD48-40DF-816B-E640069EF38E}.Debug|Default.Build.0 = Debug
+		{FBA34886-FD48-40DF-816B-E640069EF38E}.Debug|Default.Deploy.0 = Debug
+		{FBA34886-FD48-40DF-816B-E640069EF38E}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{FBA34886-FD48-40DF-816B-E640069EF38E}.DebugLocal|Default.Build.0 = DebugLocal
+		{FBA34886-FD48-40DF-816B-E640069EF38E}.Release|Default.ActiveCfg = Release
+		{FBA34886-FD48-40DF-816B-E640069EF38E}.Release|Default.Build.0 = Release
+		{FBA34886-FD48-40DF-816B-E640069EF38E}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58726933-8CAB-4F4E-AF3B-399CA003DF15}
+	EndGlobalSection
+EndGlobal

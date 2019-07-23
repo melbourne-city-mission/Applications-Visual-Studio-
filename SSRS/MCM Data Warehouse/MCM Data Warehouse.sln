@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "MCM Data Warehouse", "MCM Data Warehouse\MCM Data Warehouse.rptproj", "{E0B47818-04F2-4005-B099-0B590D60B91E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0B47818-04F2-4005-B099-0B590D60B91E}.Debug|Default.ActiveCfg = Debug
+		{E0B47818-04F2-4005-B099-0B590D60B91E}.Debug|Default.Build.0 = Debug
+		{E0B47818-04F2-4005-B099-0B590D60B91E}.Debug|Default.Deploy.0 = Debug
+		{E0B47818-04F2-4005-B099-0B590D60B91E}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{E0B47818-04F2-4005-B099-0B590D60B91E}.DebugLocal|Default.Build.0 = DebugLocal
+		{E0B47818-04F2-4005-B099-0B590D60B91E}.Release|Default.ActiveCfg = Release
+		{E0B47818-04F2-4005-B099-0B590D60B91E}.Release|Default.Build.0 = Release
+		{E0B47818-04F2-4005-B099-0B590D60B91E}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B3D029A-B685-4F03-A160-6339185472B8}
+	EndGlobalSection
+EndGlobal
