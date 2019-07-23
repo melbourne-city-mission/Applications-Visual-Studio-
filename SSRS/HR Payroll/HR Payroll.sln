@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "HR Payroll", "HR Payroll\HR Payroll.rptproj", "{35CA3983-5EF3-46F9-B574-E7930A62CFCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35CA3983-5EF3-46F9-B574-E7930A62CFCA}.Debug|Default.ActiveCfg = Debug
+		{35CA3983-5EF3-46F9-B574-E7930A62CFCA}.Debug|Default.Build.0 = Debug
+		{35CA3983-5EF3-46F9-B574-E7930A62CFCA}.Debug|Default.Deploy.0 = Debug
+		{35CA3983-5EF3-46F9-B574-E7930A62CFCA}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{35CA3983-5EF3-46F9-B574-E7930A62CFCA}.DebugLocal|Default.Build.0 = DebugLocal
+		{35CA3983-5EF3-46F9-B574-E7930A62CFCA}.Release|Default.ActiveCfg = Release
+		{35CA3983-5EF3-46F9-B574-E7930A62CFCA}.Release|Default.Build.0 = Release
+		{35CA3983-5EF3-46F9-B574-E7930A62CFCA}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BEEA8D9-95CB-4A13-A9D4-CAA7233D7AA2}
+	EndGlobalSection
+EndGlobal
