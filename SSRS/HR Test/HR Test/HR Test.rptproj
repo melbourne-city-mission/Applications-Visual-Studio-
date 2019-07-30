@@ -61,7 +61,13 @@
     <Report Include="Leave Balance.rdl" />
     <Report Include="Leave History.rdl" />
     <Report Include="PayRoll History.rdl" />
+    <Report Include="Payroll Sub Folder - ADP Export.rdl" />
+    <Report Include="Payroll Sub Folder - Hesta Export.rdl" />
+    <Report Include="Payroll Sub Folder - Salary Packaging V2.rdl" />
+    <Report Include="Payroll Sub Folder - Salary Packaging.rdl" />
     <Report Include="PDS Report.rdl" />
+    <Report Include="Training Sub Folder - Mandatory Training For Action.rdl" />
+    <Report Include="Training Sub Folder - Training History.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

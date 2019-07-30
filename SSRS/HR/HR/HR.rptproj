@@ -60,8 +60,10 @@
     <Report Include="HR Information.rdl" />
     <Report Include="Leave Balance.rdl" />
     <Report Include="Leave History.rdl" />
+    <Report Include="New Starters.rdl" />
     <Report Include="PayRoll History.rdl" />
     <Report Include="PDS Report.rdl" />
+    <Report Include="Turnover.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
