@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MorfNet (deleted db - Morf)">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=192.168.0.21;Initial Catalog=Morf</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>ddfe35c6-3b31-4acb-88fe-113b6e366bfd</DataSourceID>
+</RptDataSource>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <FullPath>Debug</FullPath>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>Application - Archived</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
+    <FullPath>DebugLocal</FullPath>
+    <OutputPath>bin\DebugLocal</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>Application - Archived</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <FullPath>Release</FullPath>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>Application - Archived</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
+  </PropertyGroup>
+  <PropertyGroup>
+    <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+    <DataSources>@(DataSource)</DataSources>
+    <DataSets>@(DataSet)</DataSets>
+    <Reports>@(Report)</Reports>
+  </PropertyGroup>
+  <ItemGroup>
+    <DataSource Include="ECDP.rds" />
+    <DataSource Include="FindingSolutions.rds" />
+    <DataSource Include="JSA.rds" />
+    <DataSource Include="MMS.rds" />
+    <DataSource Include="MorfNet (deleted db - Morf).rds" />
+    <DataSource Include="MorfNet (deleted db - MorfWeb).rds" />
+    <DataSource Include="PIP.rds" />
+    <DataSource Include="Siblings.rds" />
+    <DataSource Include="Vision.rds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Report Include="Archive - ECDP - ClientNote.rdl" />
+    <Report Include="Archive - ECDP - ClientNotes.rdl" />
+    <Report Include="Archive - Finding Solutions - Clients By Case Worker.rdl" />
+    <Report Include="Archive - Finding Solutions - Clients By Suburb.rdl" />
+    <Report Include="Archive - Finding Solutions - DHS Quarterly Report.rdl" />
+    <Report Include="Archive - Finding Solutions - Program Monthly Report.rdl" />
+    <Report Include="Archive - JSA - VacanciesByElo.rdl" />
+    <Report Include="Archive - JSA - VacancyDetail.rdl" />
+    <Report Include="Archive - MMS - New Item.rdl" />
+    <Report Include="Archive - MMS - Performance.rdl" />
+    <Report Include="Archive - MMS - RequestsByProperty.rdl" />
+    <Report Include="Archive - MMS - RequestsDetails.rdl" />
+    <Report Include="Archive - MMS - RequestsInProgressByUser.rdl" />
+    <Report Include="Archive - MMS - StatisticsByProperty.rdl" />
+    <Report Include="Archive - MMS - subRequestByProperty.rdl" />
+    <Report Include="Archive - MorfNET - Age And Gender.rdl" />
+    <Report Include="Archive - MorfNET - Outcome By Frequency.rdl" />
+    <Report Include="Archive - MorfNET - RPT001.rdl" />
+    <Report Include="Archive - MorfNET - RPT002.rdl" />
+    <Report Include="Archive - MorfWeb - AFP.rdl" />
+    <Report Include="Archive - PIP - ClientNote.rdl" />
+    <Report Include="Archive - PIP - ClientNotes.rdl" />
+    <Report Include="Archive - PIP - ClientsAddressList.rdl" />
+    <Report Include="Archive - PIP - ClientStatistics.rdl" />
+    <Report Include="Archive - PIP - ClientsViaMunicipality.rdl" />
+    <Report Include="Archive - PIP - GroupsAddressList.rdl" />
+    <Report Include="Archive - PIP - SupportHoursByPeriod.rdl" />
+    <Report Include="Archive - PIP - VolunteersAddressList.rdl" />
+    <Report Include="Archive - PIP - VolunteerStatistics.rdl" />
+    <Report Include="Archive - PIP - VolunteersViaMunicipality.rdl" />
+    <Report Include="Archive - Siblings - Age And Gender.rdl" />
+    <Report Include="Archive - Siblings - Attendance By Period.rdl" />
+    <Report Include="Archive - Siblings - Client List by Working Group.rdl" />
+    <Report Include="Archive - Siblings - Client List.rdl" />
+    <Report Include="Archive - Siblings - Export List.rdl" />
+    <Report Include="Archive - Siblings - Special Considerations By Working Group.rdl" />
+    <Report Include="Archive - Siblings - sub - Disabilities.rdl" />
+    <Report Include="Archive - Siblings - sub - WorkingGroups.rdl" />
+    <Report Include="Archive - Vision - FFS Funds Activity Statement.rdl" />
+    <Report Include="Archive - Vision - FFS Funds Activity Summary By Date.rdl" />
+    <Report Include="Archive - Vision - FFS Funds Activity Summary.rdl" />
+    <Report Include="Archive - Vision - FFS Funds Balance Summary.rdl" />
+    <Report Include="Archive - Vision - FFS Invoices By Fund.rdl" />
+    <Report Include="Archive - Vision - FFS Invoices By Period.rdl" />
+    <Report Include="Archive - Vision - FFS Invoices To Finance.rdl" />
+    <Report Include="Archive - Vision - FFS Transaction Approval.rdl" />
+    <Report Include="Archive - Vision - Invoice Approval.rdl" />
+    <Report Include="Archive - Vision - Invoice Request.rdl" />
+    <Report Include="Archive - Vision - Invoice.rdl" />
+    <Report Include="Archive - Vision - PettyCash.rdl" />
+    <Report Include="Archive - Vision - Roster By Period.rdl" />
+    <Report Include="Archive - Vision - Roster By Vehicle.rdl" />
+    <Report Include="Archive - Vision - Workers Activity Summary.rdl" />
+    <Report Include="Archive - Vision - Workers Time Sheet.rdl" />
+    <Report Include="Archive - Vision - _FundBalances.rdl" />
+    <Report Include="Archive - Vision - _FundTransactions.rdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
+</Project>

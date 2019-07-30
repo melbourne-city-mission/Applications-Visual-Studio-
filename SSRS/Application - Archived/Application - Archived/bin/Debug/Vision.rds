@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Vision">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=MCM-DB2;Initial Catalog=Vision</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>331d7b3c-8476-42fe-9df1-3320cf028091</DataSourceID>
+</RptDataSource>

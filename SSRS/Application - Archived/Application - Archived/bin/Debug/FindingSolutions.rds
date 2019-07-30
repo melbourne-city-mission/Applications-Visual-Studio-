@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="FindingSolutions">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=192.168.0.21;Initial Catalog=FindingSolutions</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>0cd8fae5-9ee7-4c7f-8b86-10427669781a</DataSourceID>
+</RptDataSource>

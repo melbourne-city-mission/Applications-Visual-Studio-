@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Siblings">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=mcm-db2;Initial Catalog=Siblings</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>3cc0fa9b-3191-4bac-ae7b-2d16b8614aa8</DataSourceID>
+</RptDataSource>
