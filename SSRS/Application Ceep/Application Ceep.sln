@@ -9,6 +9,8 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
 		DebugLocal|Default = DebugLocal|Default
+		Development Test Server|Default = Development Test Server|Default
+		Production|Default = Production|Default
 		Release|Default = Release|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
@@ -17,6 +19,12 @@ Global
 		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.Debug|Default.Deploy.0 = Debug
 		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.DebugLocal|Default.ActiveCfg = DebugLocal
 		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.DebugLocal|Default.Build.0 = DebugLocal
+		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.Development Test Server|Default.ActiveCfg = Development Test Server
+		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.Development Test Server|Default.Build.0 = Development Test Server
+		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.Development Test Server|Default.Deploy.0 = Development Test Server
+		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.Production|Default.ActiveCfg = Production
+		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.Production|Default.Build.0 = Production
+		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.Production|Default.Deploy.0 = Production
 		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.Release|Default.ActiveCfg = Release
 		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.Release|Default.Build.0 = Release
 		{CDFF4AD2-DE68-4332-93AE-17DC447F75C0}.Release|Default.Deploy.0 = Release

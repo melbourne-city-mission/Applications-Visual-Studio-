@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DHSCrissp">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=mcm-db2;Initial Catalog=DHSCrissp</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>63f475bb-eef0-49c3-8c34-5439e7c7fe4b</DataSourceID>
+</RptDataSource>

@@ -2,7 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="JSA">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=192.168.0.21;Initial Catalog=JSA</ConnectString>
+    <ConnectString>Data Source=mcm-db2;Initial Catalog=JSA</ConnectString>
   </ConnectionProperties>
   <DataSourceID>4bb04fe6-221e-49c7-9788-fdbf12a6d23f</DataSourceID>
 </RptDataSource>
