@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Chris21">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=mcm-chris-srv;Initial Catalog=chrisprod</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>caf92805-a45d-42f3-a421-f7d62be7a40c</DataSourceID>
+</RptDataSource>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Human Resources - Training", "Human Resources - Training\Human Resources - Training.rptproj", "{C20677D3-C0DF-4139-BDF7-CC78B7F3773F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C20677D3-C0DF-4139-BDF7-CC78B7F3773F}.Debug|Default.ActiveCfg = Debug
+		{C20677D3-C0DF-4139-BDF7-CC78B7F3773F}.Debug|Default.Build.0 = Debug
+		{C20677D3-C0DF-4139-BDF7-CC78B7F3773F}.Debug|Default.Deploy.0 = Debug
+		{C20677D3-C0DF-4139-BDF7-CC78B7F3773F}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{C20677D3-C0DF-4139-BDF7-CC78B7F3773F}.DebugLocal|Default.Build.0 = DebugLocal
+		{C20677D3-C0DF-4139-BDF7-CC78B7F3773F}.Release|Default.ActiveCfg = Release
+		{C20677D3-C0DF-4139-BDF7-CC78B7F3773F}.Release|Default.Build.0 = Release
+		{C20677D3-C0DF-4139-BDF7-CC78B7F3773F}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46DD7E11-3592-4369-9C92-E23162AC601D}
+	EndGlobalSection
+EndGlobal
