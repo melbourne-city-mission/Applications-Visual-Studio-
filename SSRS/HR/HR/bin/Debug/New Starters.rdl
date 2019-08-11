@@ -1571,11 +1571,6 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DTS_Main</DataSetName>
-            <SortExpressions>
-              <SortExpression>
-                <Value>=Fields!EmployeeNumber.Value</Value>
-              </SortExpression>
-            </SortExpressions>
             <Top>0.17639cm</Top>
             <Height>1.72063cm</Height>
             <Width>34.24865cm</Width>
