@@ -58,6 +58,7 @@
     <Report Include="Employee Contact Details.rdl" />
     <Report Include="Establishment.rdl" />
     <Report Include="Excess Annual Leave.rdl" />
+    <Report Include="HeadCount and Workforce Diversity.rdl" />
     <Report Include="HR Information.rdl" />
     <Report Include="Leave Balance.rdl" />
     <Report Include="Leave History.rdl" />

@@ -12,23 +12,6 @@
     <DataSet Name="DTS_Main">
       <Query>
         <DataSourceName>Chris21</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@L1CC">
-            <Value>=Parameters!Level1CC.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@L2CC">
-            <Value>=Parameters!Level2CC.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@L3CC">
-            <Value>=Parameters!Level3CC.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@L4CC">
-            <Value>=Parameters!Level4CC.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@L5CC">
-            <Value>=Parameters!Level5CC.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>spMCMRPT_NewStarters</CommandText>
       </Query>
@@ -108,16 +91,15 @@
       </Fields>
       <Filters>
         <Filter>
-          <FilterExpression>=Fields!DateJoined.Value</FilterExpression>
-          <Operator>Between</Operator>
+          <FilterExpression>=Fields!L1CC.Value</FilterExpression>
+          <Operator>Equal</Operator>
           <FilterValues>
-            <FilterValue>=Parameters!FromDate.Value</FilterValue>
-            <FilterValue>=Parameters!ToDate.Value</FilterValue>
+            <FilterValue>="All" =  Parameters!Level11cc.Value or Parameters!Level11cc.Value</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>
     </DataSet>
-    <DataSet Name="DTS_Prompt_L1CC">
+    <DataSet Name="DTS_Prompt_Level1CC">
       <Query>
         <DataSourceName>Chris21</DataSourceName>
         <CommandText>SELECT 
@@ -125,97 +107,6 @@
       ,V.[DESCRIPTION]
       ,V.[DESCONLY]
   FROM [chrisprod].[dbo].[vwCompanies] V</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="CODE">
-          <DataField>CODE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DESCRIPTION">
-          <DataField>DESCRIPTION</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DESCONLY">
-          <DataField>DESCONLY</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-    <DataSet Name="DTS_Prompt_L2CC">
-      <Query>
-        <DataSourceName>Chris21</DataSourceName>
-        <CommandText> 
-SELECT V.[CODE]
-      ,V.[DESCRIPTION]
-      ,V.[DESCONLY]
-  FROM [chrisprod].[dbo].[vwTeams] V</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="CODE">
-          <DataField>CODE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DESCRIPTION">
-          <DataField>DESCRIPTION</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DESCONLY">
-          <DataField>DESCONLY</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-    <DataSet Name="DTS_Prompt_L3CC">
-      <Query>
-        <DataSourceName>Chris21</DataSourceName>
-        <CommandText>
-SELECT 
-	   V.[CODE]
-      ,V.[DESCRIPTION]
-  FROM [dbo].[vwPortfolios] V</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="CODE">
-          <DataField>CODE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DESCRIPTION">
-          <DataField>DESCRIPTION</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-    <DataSet Name="DTS_Prompt_L4CC">
-      <Query>
-        <DataSourceName>Chris21</DataSourceName>
-        <CommandText>SELECT V.[CODE]
-      ,V.[DESCRIPTION]
-      ,V.[DESCONLY]
-  FROM [dbo].[vwDepartment] V</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="CODE">
-          <DataField>CODE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DESCRIPTION">
-          <DataField>DESCRIPTION</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DESCONLY">
-          <DataField>DESCONLY</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-    <DataSet Name="DTS_Prompt_L5CC">
-      <Query>
-        <DataSourceName>Chris21</DataSourceName>
-        <CommandText>
-SELECT V.[CODE]
-      ,V.[DESCRIPTION]
-      ,V.[DESCONLY]
-  FROM [dbo].[vwCostCentres] V</CommandText>
       </Query>
       <Fields>
         <Field Name="CODE">
@@ -256,10 +147,13 @@ SELECT V.[CODE]
                   <Width>2.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
+                  <Width>2.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
                   <Width>1.15063cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>5.62447cm</Width>
+                  <Width>4.22218cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.20896cm</Width>
@@ -435,6 +329,48 @@ SELECT V.[CODE]
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox12</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox26">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>SEX</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox26</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -967,6 +903,38 @@ SELECT V.[CODE]
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="SEX">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!SEX.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>SEX</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="DateJoined">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -1390,6 +1358,38 @@ SELECT V.[CODE]
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox30">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox30</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox11">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -1695,6 +1695,7 @@ SELECT V.[CODE]
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -1713,7 +1714,7 @@ SELECT V.[CODE]
             <DataSetName>DTS_Main</DataSetName>
             <Top>0.17639cm</Top>
             <Height>1.72063cm</Height>
-            <Width>35.65094cm</Width>
+            <Width>36.74865cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1724,7 +1725,7 @@ SELECT V.[CODE]
         <Height>2.30825cm</Height>
         <Style />
       </Body>
-      <Width>35.65094cm</Width>
+      <Width>36.74865cm</Width>
       <Page>
         <PageHeader>
           <Height>2cm</Height>
@@ -1870,95 +1871,13 @@ SELECT V.[CODE]
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>All</Value>
+          <Value>MCM</Value>
         </Values>
       </DefaultValue>
       <Prompt>Company</Prompt>
       <ValidValues>
         <DataSetReference>
-          <DataSetName>DTS_Prompt_L1CC</DataSetName>
-          <ValueField>CODE</ValueField>
-          <LabelField>DESCRIPTION</LabelField>
-        </DataSetReference>
-      </ValidValues>
-    </ReportParameter>
-    <ReportParameter Name="ToDate">
-      <DataType>DateTime</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>=today()</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>To Date</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="Level2CC">
-      <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>All</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>Team</Prompt>
-      <ValidValues>
-        <DataSetReference>
-          <DataSetName>DTS_Prompt_L2CC</DataSetName>
-          <ValueField>CODE</ValueField>
-          <LabelField>DESCRIPTION</LabelField>
-        </DataSetReference>
-      </ValidValues>
-    </ReportParameter>
-    <ReportParameter Name="FromDate">
-      <DataType>DateTime</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>=dateAdd("d",-30,Today())</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>From Date</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="Level3CC">
-      <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>All</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>Portfolio</Prompt>
-      <ValidValues>
-        <DataSetReference>
-          <DataSetName>DTS_Prompt_L3CC</DataSetName>
-          <ValueField>CODE</ValueField>
-          <LabelField>DESCRIPTION</LabelField>
-        </DataSetReference>
-      </ValidValues>
-    </ReportParameter>
-    <ReportParameter Name="Level4CC">
-      <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>All</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>Department</Prompt>
-      <ValidValues>
-        <DataSetReference>
-          <DataSetName>DTS_Prompt_L4CC</DataSetName>
-          <ValueField>CODE</ValueField>
-          <LabelField>DESCRIPTION</LabelField>
-        </DataSetReference>
-      </ValidValues>
-    </ReportParameter>
-    <ReportParameter Name="Level5CC">
-      <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>All</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>Cost Centre</Prompt>
-      <ValidValues>
-        <DataSetReference>
-          <DataSetName>DTS_Prompt_L5CC</DataSetName>
+          <DataSetName>DTS_Prompt_Level1CC</DataSetName>
           <ValueField>CODE</ValueField>
           <LabelField>DESCRIPTION</LabelField>
         </DataSetReference>
@@ -1967,43 +1886,13 @@ SELECT V.[CODE]
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>3</NumberOfColumns>
-      <NumberOfRows>5</NumberOfRows>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>Level1CC</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>FromDate</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>ToDate</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>Level2CC</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>2</RowIndex>
-          <ParameterName>Level3CC</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>3</RowIndex>
-          <ParameterName>Level4CC</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>4</RowIndex>
-          <ParameterName>Level5CC</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

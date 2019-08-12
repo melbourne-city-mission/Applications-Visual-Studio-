@@ -12,6 +12,23 @@
     <DataSet Name="DTS_Main">
       <Query>
         <DataSourceName>Chris21</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@L1CC">
+            <Value>=Parameters!Level1CC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@L2CC">
+            <Value>=Parameters!Level2CC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@L3CC">
+            <Value>=Parameters!Level3CC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@L4CC">
+            <Value>=Parameters!Level4CC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@L5CC">
+            <Value>=Parameters!Level5CC.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>spMCMRPT_NewStarters</CommandText>
       </Query>
@@ -80,6 +97,14 @@
           <DataField>Employment_Status</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="AvgHoursWorking">
+          <DataField>AvgHoursWorking</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SEX">
+          <DataField>SEX</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Filters>
         <Filter>
@@ -91,6 +116,121 @@
           </FilterValues>
         </Filter>
       </Filters>
+    </DataSet>
+    <DataSet Name="DTS_Prompt_L1CC">
+      <Query>
+        <DataSourceName>Chris21</DataSourceName>
+        <CommandText>SELECT 
+       V.[CODE]
+      ,V.[DESCRIPTION]
+      ,V.[DESCONLY]
+  FROM [chrisprod].[dbo].[vwCompanies] V</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CODE">
+          <DataField>CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCONLY">
+          <DataField>DESCONLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DTS_Prompt_L2CC">
+      <Query>
+        <DataSourceName>Chris21</DataSourceName>
+        <CommandText> 
+SELECT V.[CODE]
+      ,V.[DESCRIPTION]
+      ,V.[DESCONLY]
+  FROM [chrisprod].[dbo].[vwTeams] V</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CODE">
+          <DataField>CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCONLY">
+          <DataField>DESCONLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DTS_Prompt_L3CC">
+      <Query>
+        <DataSourceName>Chris21</DataSourceName>
+        <CommandText>
+SELECT 
+	   V.[CODE]
+      ,V.[DESCRIPTION]
+  FROM [dbo].[vwPortfolios] V</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CODE">
+          <DataField>CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DTS_Prompt_L4CC">
+      <Query>
+        <DataSourceName>Chris21</DataSourceName>
+        <CommandText>SELECT V.[CODE]
+      ,V.[DESCRIPTION]
+      ,V.[DESCONLY]
+  FROM [dbo].[vwDepartment] V</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CODE">
+          <DataField>CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCONLY">
+          <DataField>DESCONLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DTS_Prompt_L5CC">
+      <Query>
+        <DataSourceName>Chris21</DataSourceName>
+        <CommandText>
+SELECT V.[CODE]
+      ,V.[DESCRIPTION]
+      ,V.[DESCONLY]
+  FROM [dbo].[vwCostCentres] V</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CODE">
+          <DataField>CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCONLY">
+          <DataField>DESCONLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
     </DataSet>
   </DataSets>
   <ReportSections>
@@ -1726,14 +1866,21 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="FromDate">
-      <DataType>DateTime</DataType>
+    <ReportParameter Name="Level1CC">
+      <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>=dateAdd("d",-7,Today())</Value>
+          <Value>All</Value>
         </Values>
       </DefaultValue>
-      <Prompt>From Date</Prompt>
+      <Prompt>Company</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DTS_Prompt_L1CC</DataSetName>
+          <ValueField>CODE</ValueField>
+          <LabelField>DESCRIPTION</LabelField>
+        </DataSetReference>
+      </ValidValues>
     </ReportParameter>
     <ReportParameter Name="ToDate">
       <DataType>DateTime</DataType>
@@ -1744,21 +1891,119 @@
       </DefaultValue>
       <Prompt>To Date</Prompt>
     </ReportParameter>
+    <ReportParameter Name="Level2CC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>All</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Team</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DTS_Prompt_L2CC</DataSetName>
+          <ValueField>CODE</ValueField>
+          <LabelField>DESCRIPTION</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="FromDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=dateAdd("d",-30,Today())</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>From Date</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Level3CC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>All</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Portfolio</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DTS_Prompt_L3CC</DataSetName>
+          <ValueField>CODE</ValueField>
+          <LabelField>DESCRIPTION</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Level4CC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>All</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Department</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DTS_Prompt_L4CC</DataSetName>
+          <ValueField>CODE</ValueField>
+          <LabelField>DESCRIPTION</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Level5CC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>All</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Cost Centre</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DTS_Prompt_L5CC</DataSetName>
+          <ValueField>CODE</ValueField>
+          <LabelField>DESCRIPTION</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
+      <NumberOfColumns>3</NumberOfColumns>
+      <NumberOfRows>5</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
+          <ParameterName>Level1CC</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>1</RowIndex>
           <ParameterName>FromDate</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>ToDate</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>Level2CC</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>Level3CC</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>Level4CC</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>Level5CC</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
