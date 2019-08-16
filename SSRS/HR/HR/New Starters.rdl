@@ -170,7 +170,7 @@ SELECT V.[CODE]
         <DataSourceName>Chris21</DataSourceName>
         <CommandText>
 SELECT 
-	   V.[CODE]
+ V.[CODE]
       ,V.[DESCRIPTION]
   FROM [dbo].[vwPortfolios] V</CommandText>
       </Query>
@@ -631,7 +631,7 @@ SELECT V.[CODE]
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>L1CC</Value>
+                                  <Value>Company</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -673,7 +673,7 @@ SELECT V.[CODE]
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>L2CC</Value>
+                                  <Value>Team</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -715,7 +715,7 @@ SELECT V.[CODE]
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>L3CC</Value>
+                                  <Value>Portfolio</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -757,7 +757,7 @@ SELECT V.[CODE]
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>L4CC</Value>
+                                  <Value>Department</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -799,7 +799,7 @@ SELECT V.[CODE]
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>L5CC</Value>
+                                  <Value>Cost Centre</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>

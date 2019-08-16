@@ -12,6 +12,26 @@
     <DataSet Name="DTS_Main">
       <Query>
         <DataSourceName>Chris21</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@L1CC">
+            <Value>=Parameters!L1CC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@L2CC">
+            <Value>=Parameters!L2CC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@L3CC">
+            <Value>=Parameters!L3CC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@L4CC">
+            <Value>=Parameters!L4CC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@L5CC">
+            <Value>=Parameters!L5CC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ExcessALNumber">
+            <Value>=Parameters!ExcessALNumber.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>spMCMRPT_ExcessAnnualLeave</CommandText>
       </Query>
@@ -123,6 +143,120 @@
         <Field Name="LAC_TOTAL_WEEKS">
           <DataField>LAC TOTAL WEEKS</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DTS_Prompt_Level1CC">
+      <Query>
+        <DataSourceName>Chris21</DataSourceName>
+        <CommandText>SELECT 
+       V.[CODE]
+      ,V.[DESCRIPTION]
+      ,V.[DESCONLY]
+  FROM [chrisprod].[dbo].[vwCompanies] V</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CODE">
+          <DataField>CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCONLY">
+          <DataField>DESCONLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DTS_Prompt_Level2CC">
+      <Query>
+        <DataSourceName>Chris21</DataSourceName>
+        <CommandText> 
+SELECT V.[CODE]
+      ,V.[DESCRIPTION]
+      ,V.[DESCONLY]
+  FROM [chrisprod].[dbo].[vwTeams] V</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CODE">
+          <DataField>CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCONLY">
+          <DataField>DESCONLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DTS_Prompt_Level3CC">
+      <Query>
+        <DataSourceName>Chris21</DataSourceName>
+        <CommandText>SELECT 
+V.[CODE]
+,V.[DESCRIPTION]
+FROM [dbo].[vwPortfolios] V</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CODE">
+          <DataField>CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DTS_Prompt_Level4CC">
+      <Query>
+        <DataSourceName>Chris21</DataSourceName>
+        <CommandText>SELECT V.[CODE]
+      ,V.[DESCRIPTION]
+      ,V.[DESCONLY]
+  FROM [dbo].[vwDepartment] V</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CODE">
+          <DataField>CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCONLY">
+          <DataField>DESCONLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DTS_Prompt_Level5CC">
+      <Query>
+        <DataSourceName>Chris21</DataSourceName>
+        <CommandText>
+SELECT V.[CODE]
+      ,V.[DESCRIPTION]
+      ,V.[DESCONLY]
+  FROM [dbo].[vwCostCentres] V</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CODE">
+          <DataField>CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCONLY">
+          <DataField>DESCONLY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -564,7 +698,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>L1CC</Value>
+                                  <Value>Company</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -606,7 +740,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>L2CC</Value>
+                                  <Value>Team</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -648,7 +782,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>L3CC</Value>
+                                  <Value>Portfolio</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -690,7 +824,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>L4CC</Value>
+                                  <Value>Department</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -732,7 +866,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>L5CC</Value>
+                                  <Value>Cost Centre</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3124,7 +3258,7 @@
             <Image Name="image1">
               <Source>Embedded</Source>
               <Value>new_logo_infonet_1</Value>
-              <Left>28.72072cm</Left>
+              <Left>63.32822cm</Left>
               <Height>1.53458cm</Height>
               <Width>5.23875cm</Width>
               <ZIndex>1</ZIndex>
@@ -3165,7 +3299,7 @@
               </Paragraphs>
               <rd:DefaultName>textbox2</rd:DefaultName>
               <Top>0.14111cm</Top>
-              <Left>28.98729cm</Left>
+              <Left>63.27729cm</Left>
               <Height>0.5cm</Height>
               <Width>5.28968cm</Width>
               <Style>
@@ -3226,10 +3360,128 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="L1CC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>All</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Company</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DTS_Prompt_Level1CC</DataSetName>
+          <ValueField>CODE</ValueField>
+          <LabelField>DESCRIPTION</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="L2CC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>All</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Team</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DTS_Prompt_Level2CC</DataSetName>
+          <ValueField>CODE</ValueField>
+          <LabelField>DESCRIPTION</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="L3CC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>All</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Portfolio</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DTS_Prompt_Level3CC</DataSetName>
+          <ValueField>CODE</ValueField>
+          <LabelField>DESCRIPTION</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="L4CC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>All</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Department</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DTS_Prompt_Level4CC</DataSetName>
+          <ValueField>CODE</ValueField>
+          <LabelField>DESCRIPTION</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="L5CC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>All</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Cost Centre</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DTS_Prompt_Level5CC</DataSetName>
+          <ValueField>CODE</ValueField>
+          <LabelField>DESCRIPTION</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="ExcessALNumber">
+      <DataType>String</DataType>
+      <Prompt>Excess Annual Leave Number</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
+      <NumberOfColumns>2</NumberOfColumns>
+      <NumberOfRows>6</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>L1CC</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>L2CC</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>L3CC</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>L4CC</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>L5CC</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>5</RowIndex>
+          <ParameterName>ExcessALNumber</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <EmbeddedImages>
