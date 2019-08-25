@@ -6,13 +6,13 @@
     <ErrorLevel>2</ErrorLevel>
     <OverwriteDatasets>False</OverwriteDatasets>
     <OverwriteDataSources>False</OverwriteDataSources>
-    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <TargetServerVersion>SSRS2008</TargetServerVersion>
     <Platform>Win32</Platform>
     <TargetReportFolder>Human Resources</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
-    <TargetServerURL>http://mcm-sqldev-1/reportserver</TargetServerURL>
+    <TargetServerURL>http://mcm-db2.mcm.local/reportserver</TargetServerURL>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
     <FullPath>DebugLocal</FullPath>
@@ -62,10 +62,10 @@
     <Report Include="HR Information.rdl" />
     <Report Include="Leave Balance.rdl" />
     <Report Include="Leave History.rdl" />
-    <Report Include="New Starters.rdl" />
     <Report Include="PayRoll History (Using PIT Account Code from GL).rdl" />
     <Report Include="PayRoll History.rdl" />
     <Report Include="PDS Report.rdl" />
+    <Report Include="Removed and Consolidated - New Starters.rdl" />
     <Report Include="Turnover.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
