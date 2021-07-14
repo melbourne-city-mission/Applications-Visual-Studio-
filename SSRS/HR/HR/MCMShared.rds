@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>MCMShared</Name>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MCMShared">
   <ConnectionProperties>
     <Extension>SQL</Extension>
     <ConnectString>Data Source=MCM-DB2.mcm.local;Initial Catalog=MCMShared</ConnectString>

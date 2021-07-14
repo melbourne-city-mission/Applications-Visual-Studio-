@@ -1720,20 +1720,10 @@ order by [DESCRIPTION]</CommandText>
   <ReportParameters>
     <ReportParameter Name="DateFrom">
       <DataType>DateTime</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>06/24/2019 00:00:00</Value>
-        </Values>
-      </DefaultValue>
       <Prompt>Start Date</Prompt>
     </ReportParameter>
     <ReportParameter Name="DateTo">
       <DataType>DateTime</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>07/01/2019 00:00:00</Value>
-        </Values>
-      </DefaultValue>
       <Prompt>End Date</Prompt>
     </ReportParameter>
     <ReportParameter Name="Portfolio">

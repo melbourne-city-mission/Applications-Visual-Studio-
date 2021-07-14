@@ -148,7 +148,7 @@
        V.[CODE]
       ,V.[DESCRIPTION]
       ,V.[DESCONLY]
-  FROM [chrisprod].[dbo].[vwCompanies] V</CommandText>
+  FROM [dbo].[vwCompanies] V</CommandText>
       </Query>
       <Fields>
         <Field Name="CODE">
@@ -172,7 +172,7 @@
 SELECT V.[CODE]
       ,V.[DESCRIPTION]
       ,V.[DESCONLY]
-  FROM [chrisprod].[dbo].[vwTeams] V</CommandText>
+  FROM [dbo].[vwTeams] V</CommandText>
       </Query>
       <Fields>
         <Field Name="CODE">

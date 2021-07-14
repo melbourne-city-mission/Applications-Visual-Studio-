@@ -144,7 +144,7 @@
        V.[CODE]
       ,V.[DESCRIPTION]
       ,V.[DESCONLY]
-  FROM [chrisprod].[dbo].[vwCompanies] V</CommandText>
+  FROM [dbo].[vwCompanies] V</CommandText>
       </Query>
       <Fields>
         <Field Name="CODE">
@@ -168,7 +168,7 @@
 SELECT V.[CODE]
       ,V.[DESCRIPTION]
       ,V.[DESCONLY]
-  FROM [chrisprod].[dbo].[vwTeams] V</CommandText>
+  FROM [dbo].[vwTeams] V</CommandText>
       </Query>
       <Fields>
         <Field Name="CODE">
@@ -2729,7 +2729,7 @@ SELECT V.[CODE]
             </SortExpressions>
             <Top>0.17639cm</Top>
             <Height>2.13186cm</Height>
-            <Width>72.00342cm</Width>
+            <Width>72.00343cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2740,7 +2740,7 @@ SELECT V.[CODE]
         <Height>2.30825cm</Height>
         <Style />
       </Body>
-      <Width>72.00342cm</Width>
+      <Width>72.00343cm</Width>
       <Page>
         <PageHeader>
           <Height>2cm</Height>

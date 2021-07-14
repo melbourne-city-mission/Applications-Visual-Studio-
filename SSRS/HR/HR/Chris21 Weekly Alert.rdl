@@ -1,214 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
-  <DataSources>
-    <DataSource Name="MCMDataWarehouse">
-      <DataSourceReference>MCMDWH</DataSourceReference>
-      <rd:DataSourceID>363be93c-330c-403a-84b9-1f82e821d527</rd:DataSourceID>
-      <rd:SecurityType>None</rd:SecurityType>
-    </DataSource>
-  </DataSources>
-  <DataSets>
-    <DataSet Name="NoManager">
-      <Fields>
-        <Field Name="EmpCode">
-          <DataField>EmpCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpPosCode">
-          <DataField>EmpPosCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpName">
-          <DataField>EmpName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpTitle">
-          <DataField>EmpTitle</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CostCentre">
-          <DataField>CostCentre</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CCDescription">
-          <DataField>CCDescription</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CCSplits">
-          <DataField>CCSplits</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ReportsToID">
-          <DataField>ReportsToID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ReportsToName">
-          <DataField>ReportsToName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PosCode">
-          <DataField>PosCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpStatus">
-          <DataField>EmpStatus</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>MCMDataWarehouse</DataSourceName>
-        <CommandText>exec dbo.spr_RPT_Chris21_Alert_NoManager</CommandText>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
-    </DataSet>
-    <DataSet Name="InactiveManager">
-      <Fields>
-        <Field Name="EmpCode">
-          <DataField>EmpCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpPosCode">
-          <DataField>EmpPosCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpName">
-          <DataField>EmpName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpTitle">
-          <DataField>EmpTitle</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CostCentre">
-          <DataField>CostCentre</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CCDescription">
-          <DataField>CCDescription</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CCSplits">
-          <DataField>CCSplits</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ReportsToID">
-          <DataField>ReportsToID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ReportsToName">
-          <DataField>ReportsToName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PosCode">
-          <DataField>PosCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MgrTitle">
-          <DataField>MgrTitle</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpActiveStatus">
-          <DataField>EmpActiveStatus</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MgrActiveStatus">
-          <DataField>MgrActiveStatus</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MgrOnLeave">
-          <DataField>MgrOnLeave</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>MCMDataWarehouse</DataSourceName>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>spr_RPT_Chris21_Alert_InActiveManager</CommandText>
-      </Query>
-    </DataSet>
-    <DataSet Name="MultipleActiveManagers">
-      <Fields>
-        <Field Name="EmpCode">
-          <DataField>EmpCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpPosCode">
-          <DataField>EmpPosCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpName">
-          <DataField>EmpName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EmpTitle">
-          <DataField>EmpTitle</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CostCentre">
-          <DataField>CostCentre</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CCDescription">
-          <DataField>CCDescription</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CCSplits">
-          <DataField>CCSplits</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ReportsToID">
-          <DataField>ReportsToID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ReportsToName">
-          <DataField>ReportsToName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PosCode">
-          <DataField>PosCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MgrTitle">
-          <DataField>MgrTitle</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="LeaveStatus">
-          <DataField>LeaveStatus</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>MCMDataWarehouse</DataSourceName>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>spr_RPT_Chris21_Alert_MultipleActiveManagers</CommandText>
-      </Query>
-    </DataSet>
-    <DataSet Name="EmployeeInactivePosition">
-      <Fields>
-        <Field Name="PosCode">
-          <DataField>PosCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PosTitle">
-          <DataField>PosTitle</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PosTermDate">
-          <DataField>PosTermDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="EmpName">
-          <DataField>EmpName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>MCMDataWarehouse</DataSourceName>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>spr_RPT_Chris21_Alert_InActivePosition</CommandText>
-      </Query>
-    </DataSet>
-  </DataSets>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
       <Tablix Name="NoManagerTable">
@@ -4326,8 +4117,218 @@
     <BottomMargin>1in</BottomMargin>
     <Style />
   </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="MCMDataWarehouse">
+      <DataSourceReference>MCMDWH</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>363be93c-330c-403a-84b9-1f82e821d527</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="NoManager">
+      <Query>
+        <DataSourceName>MCMDataWarehouse</DataSourceName>
+        <CommandText>exec dbo.spr_RPT_Chris21_Alert_NoManager</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="EmpCode">
+          <DataField>EmpCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpPosCode">
+          <DataField>EmpPosCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpName">
+          <DataField>EmpName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpTitle">
+          <DataField>EmpTitle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CostCentre">
+          <DataField>CostCentre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CCDescription">
+          <DataField>CCDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CCSplits">
+          <DataField>CCSplits</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportsToID">
+          <DataField>ReportsToID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportsToName">
+          <DataField>ReportsToName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PosCode">
+          <DataField>PosCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpStatus">
+          <DataField>EmpStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="InactiveManager">
+      <Query>
+        <DataSourceName>MCMDataWarehouse</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>spr_RPT_Chris21_Alert_InActiveManager</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="EmpCode">
+          <DataField>EmpCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpPosCode">
+          <DataField>EmpPosCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpName">
+          <DataField>EmpName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpTitle">
+          <DataField>EmpTitle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CostCentre">
+          <DataField>CostCentre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CCDescription">
+          <DataField>CCDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CCSplits">
+          <DataField>CCSplits</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportsToID">
+          <DataField>ReportsToID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportsToName">
+          <DataField>ReportsToName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PosCode">
+          <DataField>PosCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MgrTitle">
+          <DataField>MgrTitle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpActiveStatus">
+          <DataField>EmpActiveStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MgrActiveStatus">
+          <DataField>MgrActiveStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MgrOnLeave">
+          <DataField>MgrOnLeave</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="MultipleActiveManagers">
+      <Query>
+        <DataSourceName>MCMDataWarehouse</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>spr_RPT_Chris21_Alert_MultipleActiveManagers</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="EmpCode">
+          <DataField>EmpCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpPosCode">
+          <DataField>EmpPosCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpName">
+          <DataField>EmpName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpTitle">
+          <DataField>EmpTitle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CostCentre">
+          <DataField>CostCentre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CCDescription">
+          <DataField>CCDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CCSplits">
+          <DataField>CCSplits</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportsToID">
+          <DataField>ReportsToID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportsToName">
+          <DataField>ReportsToName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PosCode">
+          <DataField>PosCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MgrTitle">
+          <DataField>MgrTitle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LeaveStatus">
+          <DataField>LeaveStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="EmployeeInactivePosition">
+      <Query>
+        <DataSourceName>MCMDataWarehouse</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>spr_RPT_Chris21_Alert_InActivePosition</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PosCode">
+          <DataField>PosCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PosTitle">
+          <DataField>PosTitle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PosTermDate">
+          <DataField>PosTermDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="EmpName">
+          <DataField>EmpName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportID>acae320b-5a96-44e1-92b9-7e8466cb0b34</rd:ReportID>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>acae320b-5a96-44e1-92b9-7e8466cb0b34</rd:ReportID>
 </Report>

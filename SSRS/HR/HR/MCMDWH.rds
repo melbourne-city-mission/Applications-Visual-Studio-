@@ -2,8 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MCMDWH">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=MCM-DB2.mcm.local;Initial Catalog=MCMDatawareHouse</ConnectString>
-    <IntegratedSecurity>true</IntegratedSecurity>
+    <ConnectString>Data Source=MCM-SQL-1.mcm.local;Initial Catalog=MCMDatawareHouse</ConnectString>
   </ConnectionProperties>
   <DataSourceID>70ef751e-c07a-4b5d-89f4-89640c7bc6be</DataSourceID>
 </RptDataSource>

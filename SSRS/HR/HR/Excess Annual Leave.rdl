@@ -179,7 +179,7 @@
        V.[CODE]
       ,V.[DESCRIPTION]
       ,V.[DESCONLY]
-  FROM [chrisprod].[dbo].[vwCompanies] V</CommandText>
+  FROM [dbo].[vwCompanies] V</CommandText>
       </Query>
       <Fields>
         <Field Name="CODE">
@@ -199,11 +199,11 @@
     <DataSet Name="DTS_Prompt_Level2CC">
       <Query>
         <DataSourceName>Chris21</DataSourceName>
-        <CommandText> 
-SELECT V.[CODE]
+        <CommandText>SELECT V.[CODE]
       ,V.[DESCRIPTION]
       ,V.[DESCONLY]
-  FROM [chrisprod].[dbo].[vwTeams] V</CommandText>
+  FROM [dbo].[vwTeams] V</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
         <Field Name="CODE">
