@@ -2,7 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="cfp">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=192.168.0.21;Initial Catalog=CommunityFriend</ConnectString>
+    <ConnectString>Data Source=mcm-sqldev-1;Initial Catalog=CommunityFriend</ConnectString>
   </ConnectionProperties>
   <DataSourceID>943fabc4-1223-4f2b-bb80-7753eb50d0f5</DataSourceID>
 </RptDataSource>
