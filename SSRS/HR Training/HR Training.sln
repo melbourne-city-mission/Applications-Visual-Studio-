@@ -9,6 +9,8 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
 		DebugLocal|Default = DebugLocal|Default
+		Dev Sql Test Folder|Default = Dev Sql Test Folder|Default
+		Production Environment|Default = Production Environment|Default
 		Release|Default = Release|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
@@ -17,6 +19,12 @@ Global
 		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.Debug|Default.Deploy.0 = Debug
 		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.DebugLocal|Default.ActiveCfg = DebugLocal
 		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.DebugLocal|Default.Build.0 = DebugLocal
+		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.Dev Sql Test Folder|Default.ActiveCfg = Production Environment
+		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.Dev Sql Test Folder|Default.Build.0 = Production Environment
+		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.Dev Sql Test Folder|Default.Deploy.0 = Production Environment
+		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.Production Environment|Default.ActiveCfg = Production Environment
+		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.Production Environment|Default.Build.0 = Production Environment
+		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.Production Environment|Default.Deploy.0 = Production Environment
 		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.Release|Default.ActiveCfg = Release
 		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.Release|Default.Build.0 = Release
 		{0794D7C8-5D95-484D-A932-0A7BF8DE7256}.Release|Default.Deploy.0 = Release
